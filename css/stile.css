@@ -1,0 +1,106 @@
+/* link da fonte utilizada no site */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300,400;500;600;700;800 & display=swap');
+/* configuração inicial do site zerando configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive ;
+}
+/* configurações de centralização da imagem pokedex e cor de fundo do site */
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff) ;
+    min-height: 100vh;
+}
+
+/* configurações de "responsividade" da imagem pokedex */
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+/* configurações de responsividade para dispositivos diferentes */
+.pokedex {
+    width: 80%;
+    max-width: 425px;
+}
+
+/* configurações de centralização das imagens dos pokemons dentro da tela da pokedex */
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%,20%);
+    height: 18%;
+}
+
+/* configuração de centralização do nome e numero do pokemon que aparecem quando pesquisamos */
+.pokemon__data {
+    position: absolute;
+    font-weight: 600%;
+    color: #aaa;
+    top: 53.5%;
+    right: 31%;
+    font-size: clamp(7px, 4vw, 25px);
+}
+
+/* estilização do nome do pokemon que aparece quando pesquisamos */
+.pokemon__name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+/* configuraçoes de centralização da caixa de pesquisa   */
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 15%;
+}
+
+/* estilização da caixa de pesquisa dos pokemons */
+.input_search{
+    width: 80%;
+    padding: 3%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(7px, 4vw, 1rem);
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 #333;
+}
+
+/* configurações de centralização dos botões proximo e anterior */
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+/* estilizção dos botões de proximo e anterior */
+.button{
+    width: 50%;
+    padding: 3%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clam(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -1px 2px 0 #222, -3px 5px 0 #000;
+}
+
+/* animação de clicar nos botões proximo e anterior */
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
