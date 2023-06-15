@@ -24,9 +24,8 @@ const renderPokemon = async (pokemon) => {
  
     pokemonName.innerHTML = 'Loading...';
     pokemonNumber.innerHTML = '';
-
+// configuraçaõ de locaização de pokemons no site da API
     const data = await fetchPokemon(pokemon);
-    // configuraçaõ de locaização de pokemons no site da API
     if (data)  {
         pokemonImage.style.display = 'block';
         pokemonName.innerHTML = data.name;
